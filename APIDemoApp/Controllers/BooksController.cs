@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APIDemoApp.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiVersion("1")]
     [ApiExplorerSettings(GroupName ="v1")]
     [ApiController]
@@ -24,6 +24,7 @@ namespace APIDemoApp.Controllers
         }
 
 
+        //test change for git
         // GET api/values/5
         [HttpGet]
         [Route("api/v{version:apiVersion}/Books")]

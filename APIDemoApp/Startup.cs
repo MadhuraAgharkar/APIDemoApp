@@ -50,8 +50,8 @@ namespace APIDemoApp
             services.AddTransient<ILanguageDataRepository, LanguageDataRepository>();
             services.AddTransient<IGenreDataRepository, GenreDataRepository>();
 
-            services.AddAuthentication("BasicAuthentication")
-                     .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+            //services.AddAuthentication("BasicAuthentication")
+            //         .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
             services.AddSwaggerGen();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSwaggerGen(c =>
@@ -90,7 +90,7 @@ namespace APIDemoApp
                 app.UseHsts();
             }
 
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseSwagger();

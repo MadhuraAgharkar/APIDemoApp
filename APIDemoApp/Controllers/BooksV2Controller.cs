@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APIDemoApp.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiVersion("2")]
     [ApiExplorerSettings(GroupName = "v2")]
     [ApiController]
